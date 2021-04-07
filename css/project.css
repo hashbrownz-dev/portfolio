@@ -1,0 +1,94 @@
+.brief{
+    min-height: 80%;
+}
+
+.brief > h3{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.brief > p{
+    margin: 1rem auto;
+}
+
+.brief > a{
+    display: block;
+    color: var(--hbz-orange);
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0.25em 0;
+}
+
+.proj-desc{
+    font-size: 1.25rem;
+}
+
+.gallery{
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.gallery-window{
+    
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 0 0 var(--hbz-gray);
+}
+
+.gallery-window > img{
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    vertical-align: bottom;
+}
+
+.gallery-control{
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery-control > button{
+    position: static;
+    background: transparent;
+    height: 28px;
+    min-width: 26px;
+    padding: 0;
+}
+
+.gallery-control > div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ball{
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: var(--hbz-blue);
+    transition: height 0.5s, width 0.5s;
+}
+
+.current{
+    height: 14px;
+    width: 14px;
+    background-color: var(--hbz-orange);
+}
+
+@media screen and (min-width: 640px){
+    .gallery{
+        max-width: 640px;
+    }
+    .gallery-window{
+        height: 480px;
+    }
+    .gallery-control{
+        width: 320px;
+        margin: 1.5rem auto;
+    }
+}
