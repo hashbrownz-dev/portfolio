@@ -310,9 +310,7 @@ footer > p{
 }
 
 @media screen and (min-width: 960px){
-    .section{
-        min-height: 80%;
-    }
+
 }
 
 @media screen and (min-width: 1060px){

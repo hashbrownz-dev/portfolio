@@ -11,10 +11,10 @@ const _nav = document.createElement('div'),
 _nav.id = 'nav-container';
 _navscroll.id = 'nav';
 _navname.id = 'nameplate';
-_navname.innerHTML = '<a href = "/index.html" class = "home">Roosevelt Blow</a>';
+_navname.innerHTML = '<a href = "/portfolio/index.html" class = "home">Roosevelt Blow</a>';
 _navlinks.id = 'nav-links';
 _arrow.type = 'button';
-_arrow_img.src = '/images/arrow.png';
+_arrow_img.src = '/portfolio/images/arrow.png';
 
 let linksvisible = false;
 

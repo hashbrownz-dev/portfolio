@@ -5,36 +5,42 @@ const _copy_intromessage = "I'm a web developer with a keen eye for design and a
 
 /*ABOUT*/
 
-const _copy_about = 'About Me';
+const _copy_about = `I am a front-end web developer, with more than 7 years of professional experience in the creative sector.  I began my career as a freelance graphic designer, providing illustration and design services for local businesses.  Prior to the pandemic, I worked as an Art Director for an event company that specialized in ice sculptures and water features.  In this role, I was solely responsible for the conceptualization and oversaw the production of all ice products and novelties.  Throughout my professional journey, the developments I've made on a professional and personal level have given me a unique perspective on web development.<br><br>
+I began working at Carving Ice in 2014, accepting an entry level position and performing various production related tasks.  Once I had learned the fundamentals of production, from the procurement of raw materials to the completion of a finished product, I turned my attention to the technology behind these processes.  I taught myself how to program and operate the CNC machines used to cut the ice and  refurbished a derelict CNC machine, adding additional productivity during our peak season.  At this point, I took over production, and within a year, I became the Art Director.<br><br>
+While at Carving Ice, I fell in love with the technical aspects of production, learning to limit materal waste through effective design, reduce machine time, and develop interactive pieces that combined practicality and functionality with spectacle.  In my personal time, I also began developing my first game, StarCrush.  These two experiences formed the technical foundation for my transition into web development.<br><br>
+I enjoy web development because it allows me to use my intelligence and creativity to create digital experiences that can easily be accessed by people all over the world.  I enjoy the challenge of creating web applications that are aesthetically interesting, accesible, and intuitive.`;
 
 /*RESUME*/
 
 const _copy_resume_carvingice = {
     position: 'Art Director',
     location: 'Carving Ice - Placentia, CA',
-    dates: '1/1/2000  - 1/2/2000',
-    description: 'A brief Description of the position held.',
-    achievments: ['achievment 1',
-        'achievment 2',
-        'achievment 3']
+    dates: '12/2014 - 3/2020',
+    description: `Design and direct the production and delivery of ice sculptures and ice novelties.  Meet with clients to discuss project specifications.  Inspect all productions prior to delivery to ensure quality standards are met.  Establish weekly goals and production timelines to ensure all products are completed on time.`,
+    achievments: ['Refurbished derelict machinery increasing productivity at no additional cost.',
+        'Identified and implemented key process improvments to increase productivity and product quality.',
+        'Optimized manufacturing processes, reducing waste material and reducing machine time by 25%.',
+        'Provided excellent customer service, improving customer retention.',
+        'Created and maintained forms and procedures to assist with production and delivery tasks.']
 };
 const _copy_resume_aquareign = {
     position: 'Lead Technician',
     location: 'Aqua Reign - Anaheim, CA',
-    dates: '1/1/2000 - 1/2/2000',
-    description: 'A brief Description of the position held.',
-    achievments: ['achievment 1',
-        'achievment 2',
-        'achievment 3']
+    dates: '6/2015 - 11/2019',
+    description: 'Oversee the onsite assembly of temporary digital water curtains.  Design custom performances to client specifications.  Repair and maintain mechanical components.  Perform in house testing of all equipment.',
+    achievments: ['Introduced new software for designing water shows improving workflow and image clarity.',
+        'Implemented new maintenance routines increasing equipment longevity.']
 };
 const _copy_resume_freelance = {
     position: 'Freelance',
     location: 'Corona, CA',
-    dates: '1/1/2000 - 1/2/2000',
-    description: 'A brief Description of the position held.',
-    achievments: ['achievment 1',
-        'achievment 2',
-        'achievment 3']
+    dates: '9/2009 - 11/2014',
+    description: 'Provided digital illustrations and designs for print for local clients within Los Angeles and Riverside County',
+    achievments: ['Designed a logo and provided branding services for IAVT, San Diego',
+        'Provided several clothing designs for the inaugural launch of Kreative Konstructs, Riverside',
+        'Designed brochures, booklets, and other printed materials for CakNow, Orange County',
+        'Designed digital ads for True Source Funding, Orange County',
+        'Designed signage, brochures, and postcards for Wholesale Ice, Orange County']
 };
 
 const _jobs = [_copy_resume_carvingice, _copy_resume_aquareign, _copy_resume_freelance];
@@ -128,10 +134,10 @@ const _proj_blackjack = {
 
 const _email_address = 'rooseveltblow@gmail.com';
 const _footer_links = [
-    {copy: 'Home', title: 'Return to Homepage', href: '/index.html', target: '_self'},
+    {copy: 'Home', title: 'Return to Homepage', href: '/portfolio/index.html', target: '_self'},
     {copy: 'Contact', title: 'Email Me', href: 'mailto:rooseveltblow@gmail.com', target: '_blank'},
     {copy: 'Github', title: 'View my Github repositories', href: 'https://github.com/hashbrownz-dev/', target: '_blank'}
 ];
 
 const _projects = [_proj_spacecat, _proj_SWP, _proj_SLG, _proj_blackjack],
-    _sitelinks = [{name: 'Projects', href: '/index.html#projects'},{name: 'About', href: '/index.html#about'},{name: 'Resume', href: '/index.html#resume'}];
+    _sitelinks = [{name: 'Projects', href: '/portfolio/index.html#projects'},{name: 'About', href: '/portfolio/index.html#about'},{name: 'Resume', href: '/portfolio/index.html#resume'}];
