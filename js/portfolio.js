@@ -131,6 +131,7 @@ for(let job of _jobs){
     date.innerHTML = job.dates;
     description.innerHTML = job.description;
     aheading.innerHTML = 'Key Achievments:';
+    achievments.className = 'achievments';
 
     _resume_experience.appendChild(container);
     container.appendChild(title);

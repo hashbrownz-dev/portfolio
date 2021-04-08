@@ -12,9 +12,10 @@ html, main, body{
     font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
 }
 h1{
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 400;
     margin: 0.5rem 1rem;
     text-align: center;
@@ -91,7 +92,7 @@ h6{
     display: block;
     text-align: center;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .home{
@@ -222,6 +223,16 @@ footer > p{
 
 /*about*/
 
+#about > p{
+    padding-bottom: 3rem;
+    text-align: left;
+    text-indent: 2em;
+}
+
+#about > p:first{
+    text-indent: 0;
+}
+
 /*resume*/
 
 #resume > div{
@@ -246,6 +257,7 @@ footer > p{
 
 .location > p{
     margin: 0;
+    width: 100%;
 }
 
 .job > p{
@@ -253,6 +265,14 @@ footer > p{
     background-color: var(--hbz-light-blue);
     color: black;
     box-shadow: 10px 10px 0 0 var(--hbz-gray);
+}
+
+.achievments{
+    margin-bottom: 2em;
+}
+
+.achievments > li{
+    margin: 1em 0;
 }
 
 .skill-container{
@@ -264,7 +284,7 @@ footer > p{
 }
 
 .skill{
-    width: 100px;
+    width: 110px;
 }
 
 .skill > img{
@@ -285,14 +305,14 @@ footer > p{
         margin: 1em auto;
         border: 1px solid var(--hbz-blue);
     }
+    .location > p{
+        width: initial;
+    }
 }
 
 @media screen and (min-width: 600px){
     .class{
         width:auto;
-    }
-    .skill-container{
-        max-width: 600px;
     }
     #nav{
         width: 100%;
@@ -306,6 +326,12 @@ footer > p{
     }
     #nav-container > button{
         display: none;
+    }
+}
+
+@media screen and (min-width: 660px){
+    .skill-container{
+        max-width: 660px;
     }
 }
 

@@ -5,10 +5,10 @@ const _copy_intromessage = "I'm a web developer with a keen eye for design and a
 
 /*ABOUT*/
 
-const _copy_about = `I am a front-end web developer, with more than 7 years of professional experience in the creative sector.  I began my career as a freelance graphic designer, providing illustration and design services for local businesses.  Prior to the pandemic, I worked as an Art Director for an event company that specialized in ice sculptures and water features.  In this role, I was solely responsible for the conceptualization and oversaw the production of all ice products and novelties.  Throughout my professional journey, the developments I've made on a professional and personal level have given me a unique perspective on web development.<br><br>
-I began working at Carving Ice in 2014, accepting an entry level position and performing various production related tasks.  Once I had learned the fundamentals of production, from the procurement of raw materials to the completion of a finished product, I turned my attention to the technology behind these processes.  I taught myself how to program and operate the CNC machines used to cut the ice and  refurbished a derelict CNC machine, adding additional productivity during our peak season.  At this point, I took over production, and within a year, I became the Art Director.<br><br>
-While at Carving Ice, I fell in love with the technical aspects of production, learning to limit materal waste through effective design, reduce machine time, and develop interactive pieces that combined practicality and functionality with spectacle.  In my personal time, I also began developing my first game, StarCrush.  These two experiences formed the technical foundation for my transition into web development.<br><br>
-I enjoy web development because it allows me to use my intelligence and creativity to create digital experiences that can easily be accessed by people all over the world.  I enjoy the challenge of creating web applications that are aesthetically interesting, accesible, and intuitive.`;
+const _copy_about = `<p>I am a front-end web developer, with more than 7 years of professional experience in the creative sector.  I began my career as a freelance graphic designer, providing illustration and design services for local businesses.  Prior to the pandemic, I worked as an Art Director for an event company that specialized in ice sculptures and water features.  In this role, I was solely responsible for the conceptualization and oversaw the production of all ice products and novelties.  Throughout my professional journey, the developments I've made on a professional and personal level have given me a unique perspective on web development.</p>
+<p>I began working at Carving Ice in 2014, accepting an entry level position and performing various production related tasks.  Once I had learned the fundamentals of production, from the procurement of raw materials to the completion of a finished product, I turned my attention to the technology behind these processes.  I taught myself how to program and operate the CNC machines used to cut the ice and  refurbished a derelict CNC machine, adding additional productivity during our peak season.  At this point, I took over production, and within a year, I became the Art Director.</p>
+<p>While at Carving Ice, I fell in love with the technical aspects of production, learning to limit materal waste through effective design, reduce machine time, and develop interactive pieces that combined practicality and functionality with spectacle.  In my personal time, I also began developing my first game, StarCrush.  These two experiences formed the technical foundation for my transition into web development.</p>
+<p>I enjoy web development because it allows me to use my intelligence and creativity to create digital experiences that can easily be accessed by people all over the world.  I enjoy the challenge of creating web applications that are aesthetically interesting, accesible, and intuitive.</p>`;
 
 /*RESUME*/
 
@@ -59,7 +59,7 @@ const _proj_spacecat = {
     title: 'Space Cat',
     tech: 'Javascript, HTML, CSS',
     descShort: 'A clone of the PC-80 classic, Space Mouse, built with Vanilla Javascript and the canvas',
-    descLong: 'Long Description',
+    descLong: 'Space Cat is a clone of the PC-80 classic, Space Mouse.  This project was built primarily with Vanilla Javascript and utilizes the canvas element to render graphics.  I create the sprites using Aseprite and the sound effects are assets from various free sound libraries.',
     imgS: [
         {src: '../images/screens/Space-Cat_0000.png', alt: 'Space Cat - Title Screen'},
         {src: '../images/screens/Space-Cat_0001.png', alt: 'Space Cat - Exploring the Maze'},
@@ -76,8 +76,8 @@ const _proj_spacecat = {
 const _proj_SWP = {
     title: 'Sight Word Practice',
     tech: 'Javascript, HTML, CSS',
-    descShort: 'Short Description',
-    descLong: 'Long Description',
+    descShort: 'A small collection of games designed to help small children learn High Frequency Words.',
+    descLong: 'A small collection of games I designed for my daughter to help her learn her Sight Words.  I made this during the pandemic when her school was shutdown.  This project was built primarily with Vanilla Javascript.  My daughter was the lead visual designer on the project, while I provided spot illustrations and used code to execute her vision.  The sight word lists are based on the First Grade standard for the Corona-Norco Unified School District.  The audio samples were recorded by me.  Additional sound resources are from various free sound libraries.  This app is responsive and can be viewed on multiple devices.',
     imgS: [
         {src: '../images/screens/SWP_0000.png', alt: 'Sight Word Practice - Sound Board'},
         {src: '../images/screens/SWP_0001.png', alt: 'Sight Word Practice - Word Selection'},
@@ -96,7 +96,7 @@ const _proj_SLG = {
     title: 'Shopping List Generator',
     tech: 'Javascript, HTML, CSS',
     descShort: 'A tool for building shopping lists, saving recipes, and keeping track of pantry staples',
-    descLong: 'Long Description',
+    descLong: 'A tool for building shopping lists, saving recipes, and keeping track of pantry staples.  The Shopping List Generator (SLG) saves recipes, a shopping list, and a pantry list to localStorage to be accessed at a later time on the same device.  Shopping list can be quickly created by adding recipes (which will automatically add their ingredients to the list) and pantry items from a stored list.  Additional items can be added using a text box.  This app is responsive and can be viewed on multiple devices.',
     imgS: [
         {src: '../images/screens/SLG_0002.png', alt: 'Shopping List Generator - Homepage'},
         {src: '../images/screens/SLG_0003.png', alt: 'Shopping List Generator - Build a Shopping List'},
@@ -115,7 +115,7 @@ const _proj_blackjack = {
     title: 'Blackjack',
     tech: 'Javascript, HTML, CSS',
     descShort: 'A simple game of video Blackjack built with Vanilla Javascript, HTML, and CSS',
-    descLong: 'Long Description',
+    descLong: 'A simple game of video Blackjack built with Vanilla Javascript, HTML, and CSS.  The game is rendered using DOM elements.',
     imgS: [
         {src: '../images/screens/Blackjack_0000.png', alt: 'Blackjack - Good Luck!'},
         {src: '../images/screens/Blackjack_0001.png', alt: 'Blackjack - Better Luck Next Time'},
@@ -139,5 +139,5 @@ const _footer_links = [
     {copy: 'Github', title: 'View my Github repositories', href: 'https://github.com/hashbrownz-dev/', target: '_blank'}
 ];
 
-const _projects = [_proj_spacecat, _proj_SWP, _proj_SLG, _proj_blackjack],
+const _projects = [_proj_SLG, _proj_spacecat, _proj_SWP, _proj_blackjack],
     _sitelinks = [{name: 'Projects', href: '/portfolio/index.html#projects'},{name: 'About', href: '/portfolio/index.html#about'},{name: 'Resume', href: '/portfolio/index.html#resume'}];
