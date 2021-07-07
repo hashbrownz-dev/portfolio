@@ -11,10 +11,14 @@ const _nav = document.createElement('div'),
 _nav.id = 'nav-container';
 _navscroll.id = 'nav';
 _navname.id = 'nameplate';
-_navname.innerHTML = '<a href = "/portfolio/index.html" class = "home">Roosevelt Blow</a>';
+_navname.innerHTML = '<a href = "index.html" class = "home">Roosevelt Blow</a>';
 _navlinks.id = 'nav-links';
 _arrow.type = 'button';
-_arrow_img.src = '/portfolio/images/arrow.png';
+_arrow_img.src = 'images/arrow.png';
+if(project){
+    _navname.innerHTML = '<a href = "../index.html" class = "home">Roosevelt Blow</a>';
+    _arrow_img.src = '../images/arrow.png';
+}
 
 let linksvisible = false;
 
@@ -43,6 +47,7 @@ for(let link of _sitelinks){
         a = document.createElement('a');
     a.className = 'nav-link';
     a.href = link.href;
+    if(project)a.href = '../' + link.href;
     a.innerHTML = link.name;
     li.appendChild(a);
     _navlinks.appendChild(li);
@@ -68,6 +73,7 @@ for(let link of _footer_links){
     a.innerHTML = link.copy;
     a.title = link.title;
     a.href = link.href;
+    if(project)a.href = '../'+link.href;
     a.target = link.target;
     a.className = 'flink';
     _footer_link_container.appendChild(a);

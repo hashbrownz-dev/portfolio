@@ -134,10 +134,10 @@ const _proj_blackjack = {
 
 const _email_address = 'rooseveltblow@gmail.com';
 const _footer_links = [
-    {copy: 'Home', title: 'Return to Homepage', href: '/portfolio/index.html', target: '_self'},
+    {copy: 'Home', title: 'Return to Homepage', href: 'index.html', target: '_self'},
     {copy: 'Contact', title: 'Email Me', href: 'mailto:rooseveltblow@gmail.com', target: '_blank'},
     {copy: 'Github', title: 'View my Github repositories', href: 'https://github.com/hashbrownz-dev/', target: '_blank'}
 ];
 
 const _projects = [_proj_SLG, _proj_spacecat, _proj_SWP, _proj_blackjack],
-    _sitelinks = [{name: 'Projects', href: '/portfolio/index.html#projects'},{name: 'About', href: '/portfolio/index.html#about'},{name: 'Resume', href: '/portfolio/index.html#resume'}];
+    _sitelinks = [{name: 'Projects', href: 'index.html#projects'},{name: 'About', href: 'index.html#about'},{name: 'Resume', href: 'index.html#resume'}];

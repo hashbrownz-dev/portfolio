@@ -23,7 +23,7 @@ _about_view_code.target = '_blank';
 _about_view_code.href = project.linkCode;
 _about_return.innerHTML = 'View Other Projects';
 _about_return.target = '_self';
-_about_return.href = '/portfolio/index.html#projects';
+_about_return.href = '../index.html#projects';
 
 document.body.appendChild(_about);
 _about.appendChild(_about_title);
