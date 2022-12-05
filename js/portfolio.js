@@ -9,7 +9,7 @@ const _intro = document.createElement('div'),
 _intro.className = 'section';
 _intro.id = 'intro';
 _portrait.id = 'portrait';
-_portrait.src = '../images/portrait.jpg';
+_portrait.src = './images/portrait.jpg';
 _greeting.appendChild(document.createTextNode(_copy_greeting));
 _intromessage.appendChild(document.createTextNode(_copy_intromessage));
 
