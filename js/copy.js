@@ -82,6 +82,8 @@ const _skills = [
     'Entrepreneurial'
 ];
 
+const _summary = 'Full Stack Developer with experience developing rich web applications using modern web technology. Former Art Director with proven experience managing multiple projects with various deadlines, communicating project specifications with clients and team members, and quality assurance.'
+
 /*PROJECTS*/
 
 const _proj_spacecat = {

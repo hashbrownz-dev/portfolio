@@ -281,7 +281,7 @@ footer > p{
     width: 100%;
 }
 
-.job > p{
+#summary{
     padding: 1em;
     background-color: var(--hbz-light-blue);
     color: black;

@@ -77,7 +77,8 @@ const _resume = document.createElement('div'),
     _resume_education = document.createElement('div'),
     _resume_education_heading = document.createElement('h4'),
     _resume_skills = document.createElement('div'),
-    _resume_skills_heading = document.createElement('h4');
+    _resume_skills_heading = document.createElement('h4'),
+    _resume_summary = document.createElement('div');
 
 _resume.className = 'section';
 _resume.id = 'resume';
@@ -88,6 +89,7 @@ _resume_skills_heading.innerHTML = 'Skills';
 
 document.body.appendChild(_resume);
 _resume.appendChild(_resume_heading);
+_resume.appendChild(_resume_summary);
 _resume.appendChild(_resume_skills);
 _resume.appendChild(_resume_education);
 _resume.appendChild(_resume_experience);
@@ -96,6 +98,17 @@ _resume.appendChild(_resume_experience);
 _resume_experience.appendChild(_resume_experience_heading);
 _resume_education.appendChild(_resume_education_heading);
 _resume_skills.appendChild(_resume_skills_heading);
+
+// Executive Summary
+
+const summaryElement = document.createElement('p');
+
+summaryElement.id = 'summary';
+summaryElement.innerHTML = _summary;
+
+_resume_summary.appendChild(summaryElement);
+
+
 
 //Education
 
@@ -138,24 +151,6 @@ const appendEducation = (education) => {
 
 appendEducation(_perscholas);
 appendEducation(_cca);
-
-// let econtainer = document.createElement('div'),
-//     etitlecont = document.createElement('div'),
-//     etitle = document.createElement('h5'),
-//     eloc = document.createElement('p'),
-//     edate = document.createElement('p');
-
-// econtainer.className = 'job';
-// etitlecont.className = 'location';
-// etitle.innerHTML = 'BFA Illustration';
-// eloc.innerHTML = 'California College of the Arts - San Francisco, CA';
-// edate.innerHTML = '2004 - 2009';
-
-// _resume_education.appendChild(econtainer);
-// econtainer.appendChild(etitle);
-// econtainer.appendChild(etitlecont);
-// etitlecont.appendChild(eloc);
-// etitlecont.appendChild(edate);
 
 //Work Experience
 
