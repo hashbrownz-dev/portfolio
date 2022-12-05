@@ -1,20 +1,23 @@
 /* WELCOME */
 
 const _intro = document.createElement('div'),
+    _portrait = document.createElement('img'),
+    _messageContainer = document.createElement('div'),
     _greeting = document.createElement('h2'),
     _intromessage = document.createElement('p');
 
 _intro.className = 'section';
 _intro.id = 'intro';
+_portrait.id = 'portrait';
+_portrait.src = '../images/portrait.jpg';
 _greeting.appendChild(document.createTextNode(_copy_greeting));
 _intromessage.appendChild(document.createTextNode(_copy_intromessage));
-/*
-_greeting.id = 'greeting';
-_intromessage.id = 'intro-message';
-*/
+
 document.body.appendChild(_intro);
-_intro.appendChild(_greeting);
-_intro.appendChild(_intromessage);
+_intro.appendChild(_portrait);
+_intro.appendChild(_messageContainer);
+_messageContainer.appendChild(_greeting);
+_messageContainer.appendChild(_intromessage);
 
 /* PROJECTS */
 
@@ -80,37 +83,79 @@ _resume.className = 'section';
 _resume.id = 'resume';
 _resume_heading.innerHTML = 'Resume';
 _resume_experience_heading.innerHTML = 'Experience';
-_resume_education_heading.innerHTML = 'Education';
+_resume_education_heading.innerHTML = 'Certifications & Education';
 _resume_skills_heading.innerHTML = 'Skills';
 
 document.body.appendChild(_resume);
 _resume.appendChild(_resume_heading);
-_resume.appendChild(_resume_experience);
-_resume.appendChild(_resume_education);
 _resume.appendChild(_resume_skills);
+_resume.appendChild(_resume_education);
+_resume.appendChild(_resume_experience);
+
+
 _resume_experience.appendChild(_resume_experience_heading);
 _resume_education.appendChild(_resume_education_heading);
 _resume_skills.appendChild(_resume_skills_heading);
 
 //Education
 
-let econtainer = document.createElement('div'),
-    etitlecont = document.createElement('div'),
-    etitle = document.createElement('h5'),
-    eloc = document.createElement('p'),
-    edate = document.createElement('p');
+const _perscholas = {
+    award: 'Software Engineer Certification',
+    location: 'PerScholas',
+    date: '2022 - 2023'
+}
 
-econtainer.className = 'job';
-etitlecont.className = 'location';
-etitle.innerHTML = 'BFA Illustration';
-eloc.innerHTML = 'California College of the Arts - San Francisco, CA';
-edate.innerHTML = '2004 - 2009';
+const _cca = {
+    award: 'BFA Illustration',
+    location: 'California College of the Arts - San Francisco, CA',
+    date: '2004 - 2009'
+}
 
-_resume_education.appendChild(econtainer);
-econtainer.appendChild(etitle);
-econtainer.appendChild(etitlecont);
-etitlecont.appendChild(eloc);
-etitlecont.appendChild(edate);
+const appendEducation = (education) => {
+    const { award, location, date } = education;
+
+    // define elements
+    const eContainer = document.createElement('div'),
+        eAwardContainer = document.createElement('div'),
+        eAward = document.createElement('h5'),
+        eLocation = document.createElement('p'),
+        eDate = document.createElement('p');
+
+    eContainer.className = 'job';
+    eContainer.classList.add('education');
+    eAwardContainer.className = 'location';
+
+    eAward.innerHTML = award;
+    eLocation.innerHTML = location;
+    eDate.innerHTML = date;
+
+    _resume_education.appendChild(eContainer);
+    eContainer.appendChild(eAward);
+    eContainer.appendChild(eAwardContainer);
+    eAwardContainer.appendChild(eLocation)
+    eAwardContainer.appendChild(eDate)
+}
+
+appendEducation(_perscholas);
+appendEducation(_cca);
+
+// let econtainer = document.createElement('div'),
+//     etitlecont = document.createElement('div'),
+//     etitle = document.createElement('h5'),
+//     eloc = document.createElement('p'),
+//     edate = document.createElement('p');
+
+// econtainer.className = 'job';
+// etitlecont.className = 'location';
+// etitle.innerHTML = 'BFA Illustration';
+// eloc.innerHTML = 'California College of the Arts - San Francisco, CA';
+// edate.innerHTML = '2004 - 2009';
+
+// _resume_education.appendChild(econtainer);
+// econtainer.appendChild(etitle);
+// econtainer.appendChild(etitlecont);
+// etitlecont.appendChild(eloc);
+// etitlecont.appendChild(edate);
 
 //Work Experience
 
@@ -129,43 +174,33 @@ for(let job of _jobs){
     title.innerHTML = job.position;
     location.innerHTML = job.location;
     date.innerHTML = job.dates;
-    description.innerHTML = job.description;
     aheading.innerHTML = 'Key Achievments:';
     achievments.className = 'achievments';
 
     _resume_experience.appendChild(container);
     container.appendChild(title);
     container.appendChild(titlecontainer);
-    container.appendChild(description);
-    container.appendChild(aheading);
     container.appendChild(achievments);
     titlecontainer.appendChild(location);
     titlecontainer.appendChild(date);
 
-    for(let achievment of job.achievments){
+    for(let bullet of job.bullets){
         let li = document.createElement('li');
-        li.innerHTML = achievment;
+        li.innerHTML = bullet;
         achievments.appendChild(li);
     }
 }
 
 //Skills
 
-const _skill_container = document.createElement('div');
+const _skill_container = document.createElement('ul');
 _skill_container.className = 'skill-container';
 
 for(let skill of _skills){
-    let container = document.createElement('div'),
-        img = document.createElement('img'),
-        p = document.createElement('h5');
-    container.className = 'skill';
-    img.src = skill.icon;
-    img.title = skill.name;
-    img.alt = skill.name;
-    p.innerHTML = skill.name;
-    container.appendChild(img);
-    container.appendChild(p);
-    _skill_container.appendChild(container);
+    const skillElement = document.createElement('li');
+    skillElement.className = 'skill';
+    skillElement.innerHTML = skill;
+    _skill_container.appendChild(skillElement);
 }
 
 _resume_skills.appendChild(_skill_container);

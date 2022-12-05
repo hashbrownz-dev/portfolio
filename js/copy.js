@@ -12,45 +12,74 @@ const _copy_about = `<p>I am a front-end web developer, with more than 7 years o
 
 /*RESUME*/
 
+const _copy_resume_fedex = {
+    position: 'Package Handler',
+    location: 'FedEx - Aurora, CO',
+    dates: '09/2022 - Present',
+    bullets:[
+        'Coordinate the sealing, labeling, and loading of packages to ensure the correct processing of packages',
+        'Inspect inbound packages for hazmat labeling or damaged packaging',
+        'Communicate with co-workers to ensure the safe and on-time delivery of goods'
+    ]
+}
+
+const _copy_resume_medspeed = {
+    position: 'Logistics Service Representative',
+    location: 'MedSpeed - Aurora, CO',
+    dates:'11/2021 - 06/2022',
+    bullets:[
+        'Transported medical equipment, samples, supplies, and other materials',
+        'Maintained professional decorum while interacting with clients',
+        'Executed routes according to company protocols'
+    ]
+}
+
 const _copy_resume_carvingice = {
     position: 'Art Director',
     location: 'Carving Ice - Placentia, CA',
     dates: '12/2014 - 3/2020',
-    description: `Design and direct the production and delivery of ice sculptures and ice novelties.  Meet with clients to discuss project specifications.  Inspect all productions prior to delivery to ensure quality standards are met.  Establish weekly goals and production timelines to ensure all products are completed on time.`,
-    achievments: ['Refurbished derelict machinery increasing productivity at no additional cost.',
-        'Identified and implemented key process improvments to increase productivity and product quality.',
-        'Optimized manufacturing processes, reducing waste material and reducing machine time by 25%.',
-        'Provided excellent customer service, improving customer retention.',
-        'Created and maintained forms and procedures to assist with production and delivery tasks.']
+    bullets: [
+        'Maintained company website and designed digital marketing materials',
+        'Designed and directed the production and delivery of ice sculptures',
+        'Met with clients to discuss project specifications and event logistics',
+        'Inspected all productions to ensure quality standards were met',
+        'Identified and implemented key process improvements to increase productivity and product quality',
+        'Optimized manufacturing processes, reducing waste material and machine time by 25%'
+    ]
 };
 const _copy_resume_aquareign = {
     position: 'Lead Technician',
     location: 'Aqua Reign - Anaheim, CA',
     dates: '6/2015 - 11/2019',
-    description: 'Oversee the onsite assembly of temporary digital water curtains.  Design custom performances to client specifications.  Repair and maintain mechanical components.  Perform in house testing of all equipment.',
-    achievments: ['Introduced new software for designing water shows improving workflow and image clarity.',
-        'Implemented new maintenance routines increasing equipment longevity.']
-};
-const _copy_resume_freelance = {
-    position: 'Freelance',
-    location: 'Corona, CA',
-    dates: '9/2009 - 11/2014',
-    description: 'Provided digital illustrations and designs for print for local clients within Los Angeles and Riverside County',
-    achievments: ['Designed a logo and provided branding services for IAVT, San Diego',
-        'Provided several clothing designs for the inaugural launch of Kreative Konstructs, Riverside',
-        'Designed brochures, booklets, and other printed materials for CakNow, Orange County',
-        'Designed digital ads for True Source Funding, Orange County',
-        'Designed signage, brochures, and postcards for Wholesale Ice, Orange County']
+    bullets: [
+        'Oversaw the onsite assembly of digital water curtains',
+        'Designed custom performances to client satisfaction',
+        'Tested, repaired, and maintained mechanical components',
+        'Introduced new software for designing water shows improving workflow and image clarity'
+    ]
 };
 
-const _jobs = [_copy_resume_carvingice, _copy_resume_aquareign, _copy_resume_freelance];
+const _jobs = [_copy_resume_fedex, _copy_resume_medspeed, _copy_resume_carvingice, _copy_resume_aquareign];
+
 const _skills = [
-    {name: 'Javascript', icon: 'images/skill-icon_js.png'},
-    {name: 'HTML', icon: 'images/skill-icon_html.png'},
-    {name: 'CSS', icon: 'images/skill-icon_css.png'},
-    {name: 'Adobe XD', icon: 'images/skill-icon_xd.png'},
-    {name: 'Photoshop', icon: 'images/skill-icon_ps.png'},
-    {name: 'Illustrator', icon: 'images/skill-icon_ai.png'}
+    'Javascript',
+    'MongoDB',
+    'Express',
+    'React',
+    'Node.js',
+    'HTML5',
+    'CSS',
+    'Git',
+    'Postman',
+    'Adobe Illustrator',
+    'Adobe Photoshop',
+    'Project Management',
+    'Time Management',
+    'Critical Thinking',
+    'Troubleshooting',
+    'Effective Communication',
+    'Creative Problem Solving',
+    'Entrepreneurial'
 ];
 
 /*PROJECTS*/
