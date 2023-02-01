@@ -63,7 +63,7 @@ const _footer = document.createElement('footer'),
     _footer_link_container = document.createElement('div'),
     _footer_copy = document.createElement('p');
 
-_footer_copy.innerHTML = '&copy 2021 Roosevelt Blow';
+_footer_copy.innerHTML = '&copy 2023 Roosevelt Blow';
 _footer.appendChild(_footer_link_container);
 _footer.appendChild(_footer_copy);
 document.body.appendChild(_footer);

@@ -198,6 +198,7 @@ footer > p{
     border-radius: 50%;
     margin-top: 60px;
     min-width: 240px;
+    max-width: 280px;
     width: 25%;
 }
 
@@ -364,17 +365,8 @@ footer > p{
 }
 
 @media screen and (min-width: 960px){
-    #intro{
-        flex-direction: row;
-    }
-    #portrait{
-        margin-right: 48px;
-    }
     #intro > div{
-        width: 45%;
-    }
-    h2{
-        margin: 3rem;
+        width: 65%;
     }
 }
 

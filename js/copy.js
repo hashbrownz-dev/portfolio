@@ -167,7 +167,8 @@ const _email_address = 'rooseveltblow@gmail.com';
 const _footer_links = [
     {copy: 'Home', title: 'Return to Homepage', href: 'index.html', target: '_self'},
     {copy: 'Contact', title: 'Email Me', href: 'mailto:rooseveltblow@gmail.com', target: '_blank'},
-    {copy: 'Github', title: 'View my Github repositories', href: 'https://github.com/hashbrownz-dev/', target: '_blank'}
+    {copy: 'Github', title: 'View my Github repositories', href: 'https://github.com/hashbrownz-dev/', target: '_blank'},
+    {copy: 'LinkedIn', title: 'Connect with me on LinkedIn', href: 'https://www.linkedin.com/in/roosevelt-blow', target: '_blank'}
 ];
 
 const _projects = [_proj_SLG, _proj_spacecat, _proj_SWP, _proj_blackjack],
